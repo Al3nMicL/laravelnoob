@@ -9,7 +9,7 @@ use App\Http\Requests;
 class PagesController extends Controller
 {
     public function index(){
-    	$title = 'Welcome to Laravel';
+    	$title = 'Learning Laravel 5';
     	// return view('pages.index', compact('title'));
     	return view('pages.index')->with('title', $title);
     }
@@ -21,8 +21,8 @@ class PagesController extends Controller
 
     public function services(){
     	$data = array(
-    		'title' => 'Services',
-    		'services' => ['Consultation','Programming','Design']
+    		'title' => 'Understanding',
+    		'services' => ['Examples','Programming','Concepts']
     		);
 	    return view('pages.services')->with($data);
     }	    
